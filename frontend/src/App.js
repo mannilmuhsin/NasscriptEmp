@@ -27,7 +27,7 @@ function App() {
         <Header toggleSidebar={toggleSidebar} />
         <div className="flex flex-grow">
           <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-          <main className="flex-grow p-4">
+          <main className="flex-grow p-12">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/create" element={<CreateEmployee />} />

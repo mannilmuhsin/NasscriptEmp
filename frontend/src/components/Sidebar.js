@@ -15,7 +15,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   ];
 
   return (
-    <Drawer anchor="left" open={isOpen} onClose={toggleSidebar}>
+    <Drawer anchor="left" open={isOpen} onClose={toggleSidebar} >
       <List>
         {menuItems.map((item) => (
           <ListItem button key={item.text} component={Link} to={item.path} onClick={toggleSidebar}>
